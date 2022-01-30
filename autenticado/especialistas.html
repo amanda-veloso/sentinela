@@ -15,22 +15,27 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-purple">
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo" src="../assets/logo.png" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="form-inline my-2 my-lg-0">
+                            <a class="btn-sos" href="https://www.cvv.org.br/quero-conversar/">SOS Mulher</a>
+                        </div>
                     </li>
                 </ul>
-                <div class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-outline-success my-2 my-sm-0 btn-login">Login</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0 btn-register">Cadastrar</button>
-                </div>
+
+
             </div>
+        </div>
     </nav>
 
     <Section id="especialistas">
@@ -46,18 +51,136 @@
                 <h2>Psicólogos</h2>
                 <div class="lista">
                     <div class="row">
-                        <div class="col-sm">
-                            <img class="img-fluid" src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img class="img-fluid" src="../assets/woman1.svg">
+                            <h3 class="name">Lucy</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#modalExemplo">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Lucy Santos</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex; justify-content: center; flex-wrap: wrap;"
+                                            class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman1.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <div>
+                                                <h3 style="margin-top: 10px;">Agenda</h3><br>
+                                            </div>
+                                            <img class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                            <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                class="btn btn-primary btn-especialista">
+                                                Agendar consulta
+                                            </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
-                        <div class="col-sm">
-                            <img class="img-fluid" src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img class="img-fluid" src="../assets/woman2.svg">
+                            <h3 class="name">Laís</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#Lais">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="Lais" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Laís</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman2.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <img class="img-fluid" src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                            <img class="img-fluid" src="../assets/woman3.svg">
+                            <h3 class="name">Marcia</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#marcia">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="marcia" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Marcia</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman3.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,17 +189,134 @@
                 <h2>Psicólogos</h2>
                 <div class="lista">
                     <div class="row">
-                        <div class="col-sm">
-                            <img src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img src="../assets/woman1.svg">
+                            <h3 class="name">Lucy</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#lucy-mob">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="lucy-mob" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Lucy</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman1.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img style="width: 100%;" class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img src="../assets/woman2.svg">
+                            <h3 class="name">Laís</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#lais-mob">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="lais-mob" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Laís</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman2.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img style="width: 100%;" class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <img src="../assets/specialist.png">
-                            <h3>Lucy</h3>
-                        </div>
-                        <div class="col-sm">
-                            <img src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                            <img src="../assets/woman3.svg">
+                            <h3 class="name">Marcia</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#marcia-mob">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="marcia-mob" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Marcia</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman3.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img style="width: 100%;" class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,18 +325,138 @@
                 <h2>Psiquiatras</h2>
                 <div class="lista">
                     <div class="row">
-                        <div class="col-sm">
-                            <img class="img-fluid" src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img class="img-fluid" src="../assets/woman1.svg">
+                            <h3 class="name">Lucy</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#modalExemplo">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Lucy Santos</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex; justify-content: center; flex-wrap: wrap;"
+                                            class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman1.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <div>
+                                                <h3 style="margin-top: 10px;">Agenda</h3><br>
+                                            </div>
+                                            <img class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
-                        <div class="col-sm">
-                            <img class="img-fluid" src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img class="img-fluid" src="../assets/woman2.svg">
+                            <h3 class="name">Laís</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#Lais">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="Lais" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Laís</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman2.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <img class="img-fluid" src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                            <img class="img-fluid" src="../assets/woman3.svg">
+                            <h3 class="name">Marcia</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#marcia">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="marcia" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Marcia</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman3.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,37 +465,142 @@
                 <h2>Psiquiatras</h2>
                 <div class="lista">
                     <div class="row">
-                        <div class="col-sm">
-                            <img src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img src="../assets/woman1.svg">
+                            <h3 class="name">Lucy</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#lucy-mob">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="lucy-mob" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Lucy</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman1.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img style="width: 100%;" class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border-right: 3px solid #dce3f8;" class="col-sm">
+                            <img src="../assets/woman2.svg">
+                            <h3 class="name">Laís</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#lais-mob">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="lais-mob" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Laís</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman2.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img style="width: 100%;" class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <img src="../assets/specialist.png">
-                            <h3>Lucy</h3>
-                        </div>
-                        <div class="col-sm">
-                            <img src="../assets/specialist.png">
-                            <h3>Lucy</h3>
+                            <img src="../assets/woman3.svg">
+                            <h3 class="name">Marcia</h3>
+                            <button type="button" class="btn btn-primary btn-especialista" data-toggle="modal"
+                                data-target="#marcia-mob">
+                                Ler mais
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="marcia-mob" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Marcia</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div style="    display: flex;
+                                        justify-content: center;
+                                        flex-wrap: wrap;" class="modal-body">
+                                            <img class="img-fluid specialist-img" src="../assets/woman3.svg">
+                                            <p>Olá, seja bem vindo ao meu perfil! Estou feliz em te ter aqui. Fazer
+                                                terapia é algo extremamente importante para uma vida saudável.Vamos
+                                                nessa jornada?</p>
+                                            <h3 style="margin-top: 10px;">Agenda</h3>
+                                            <img style="width: 100%;" class="img-fluid" src="../assets/dia.png">
+                                            <img style="border-radius: 0px; margin-top: 10px;" class="img-fluid"
+                                                src="../assets/hr.png">
+                                                <a href="../autenticado/agendado.html"><button style="margin-top: 10px;" type="button"
+                                                    class="btn btn-primary btn-especialista">
+                                                    Agendar consulta
+                                                </button></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </Section>
 
-
-    <script>
-
-        jQuery(document).ready(function ($) {
-            ; (function ($) {
-
-                $('#category').change(function () {
-                    $('.categorias').hide();
-                    $('#' + $(this).val()).show();
-                });
-            })(jQuery);
-        });
-    </script>
     <!--bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

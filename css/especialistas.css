@@ -15,7 +15,10 @@ html {
   .row {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    height: 42vh;
+    height: 51vh;
+  }
+  .form-inline {
+    justify-content: center;
   }
 }
 
@@ -147,19 +150,68 @@ nav {
 
 .especialistas-desk,
 .especialistas-mob {
-    padding: 25px 0;
+  padding: 25px 0;
 }
 
 .especialistas-desk img,
 .especialistas-mob img {
   border-radius: 30px;
-  box-shadow: 2px 2px 8px 0px #0000004f;
+  width: 100%;
 }
 
 .especialistas-mob img {
   width: 300px;
 }
 
-input{
-    border-color: #7f77fe;  
+input {
+  border-color: #7f77fe;
+}
+
+.btn-especialista {
+  /* padding: 16px 60px; */
+  width: 100%;
+  font-size: 17px;
+  color: #7f77fe;
+  background-color: transparent;
+  border: 1px solid #7f77fe;
+  border-color: #7f77fe;
+  border-radius: 30px;
+  text-decoration: none !important;
+  transition: all 300ms;
+}
+
+.btn-especialista:hover {
+  color: #fff;
+  background-color: #7f77fe !important;
+}
+
+.name {
+  padding: 10px 0;
+}
+
+.btn-sos {
+  color: #fff;
+  background-color: red;
+  border-radius: 15px;
+  border-color: red;
+  padding: 5px 15px;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+.btn-sos:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.modal-content {
+  display: flex;
+}
+
+.modal-body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specialist-img{
+  width: 50% !important;
 }
