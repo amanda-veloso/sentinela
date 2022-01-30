@@ -15,7 +15,7 @@ html {
   .row {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    height: 51vh;
+    height: 80%;
   }
   .form-inline {
     justify-content: center;
