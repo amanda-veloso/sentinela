@@ -2,17 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width:1000px){
-    #hero, #about, #services{
-        height: 60vh;
-    }
+@media (min-width: 769px) {
+  #hero,
+  #about,
+  #services {
+    height: 60vh;
+  }
 }
 
-@media (max-width:768px){
-    #hero, #about, #services{
-        height: auto !important;
-        padding: 10px 0;
-    }
+@media (max-width: 768px) {
+  #hero,
+  #about,
+  #services {
+    height: auto !important;
+    padding: 10px 0;
+  }
+  .form-inline {
+    justify-content: center;
+  }
 }
 
 #hero {
@@ -28,9 +35,9 @@ html {
 }
 
 #services {
-    height: auto;
-    padding: 80px 0;
-    background-color: #4568dc30;
+  height: auto;
+  padding: 80px 0;
+  background-color: #4568dc30;
 }
 
 h1,
@@ -60,6 +67,10 @@ nav {
   width: 80px;
 }
 
+.title {
+  font-size: 51px;
+  max-width: 600px;
+}
 .btn-hero {
   padding: 16px 60px;
   font-size: 17px;
@@ -165,4 +176,19 @@ nav {
   60% {
     transform: translateY(-15px);
   }
+}
+
+
+.btn-sos{
+color: #fff;
+  background-color: red;
+  border-radius: 15px;
+  border-color: red;
+  padding: 5px 15px;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+.btn-sos:hover{
+color: #fff;
+  opacity: 0.9;
 }
