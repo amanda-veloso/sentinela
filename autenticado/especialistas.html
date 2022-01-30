@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/especialistas.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-purple">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="logo" src="../assets/logo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn-login">Login</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 btn-register">Cadastrar</button>
+                </div>
+            </div>
+    </nav>
+
+    <Section id="especialistas">
+        <div class="container">
+            <div class="input-group">
+                <input id="myInput" onkeyup="myFunction()" type="text" placeholder="Pesquisar por categoria"
+                    class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+            <div class="especialistas-desk">
+                <h2>Psicólogos</h2>
+                <div class="lista">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img class="img-fluid" src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+
+                        </div>
+                        <div class="col-sm">
+                            <img class="img-fluid" src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                        <div class="col-sm">
+                            <img class="img-fluid" src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="especialistas-mob">
+                <h2>Psicólogos</h2>
+                <div class="lista">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                        <div class="col-sm">
+                            <img src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                        <div class="col-sm">
+                            <img src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="especialistas-desk">
+                <h2>Psiquiatras</h2>
+                <div class="lista">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img class="img-fluid" src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+
+                        </div>
+                        <div class="col-sm">
+                            <img class="img-fluid" src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                        <div class="col-sm">
+                            <img class="img-fluid" src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="especialistas-mob">
+                <h2>Psiquiatras</h2>
+                <div class="lista">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                        <div class="col-sm">
+                            <img src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                        <div class="col-sm">
+                            <img src="../assets/specialist.png">
+                            <h3>Lucy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+
+    <script>
+
+        jQuery(document).ready(function ($) {
+            ; (function ($) {
+
+                $('#category').change(function () {
+                    $('.categorias').hide();
+                    $('#' + $(this).val()).show();
+                });
+            })(jQuery);
+        });
+    </script>
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</head>
+
+</html>
